@@ -29,7 +29,7 @@ getFinvizScreen(
 
 ### Parameters
 
-`finvizScreenerURL`: required
+`finvizScreenerURL: string`: required
 
 Must be a valid link to a finviz screener. Go to `https://finviz.com/screener.ashx` to build your desired screen, then copy the URL and paste as argument. It's that easy.
 
