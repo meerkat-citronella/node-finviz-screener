@@ -19,5 +19,9 @@
     "stocks",
     "stock screener",
     "node stock screener"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/meerkat-citronella/node-finviz-screener"
+  }
 }
