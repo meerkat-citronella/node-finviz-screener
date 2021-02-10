@@ -1,0 +1,23 @@
+{
+  "name": "node-finviz-screener",
+  "version": "0.0.2",
+  "description": "Simple package that takes a url for a finviz stock screener and returns a list of tickers that pass the screen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Carter C W Chen",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.5",
+    "node-fetch": "^2.6.1"
+  },
+  "keywords": [
+    "finviz",
+    "node",
+    "screener",
+    "stocks",
+    "stock screener",
+    "node stock screener"
+  ]
+}
