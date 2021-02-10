@@ -1,6 +1,6 @@
 {
   "name": "node-finviz-screener",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Simple package that takes a url for a finviz stock screener and returns a list of tickers that pass the screen",
   "main": "index.js",
   "scripts": {
