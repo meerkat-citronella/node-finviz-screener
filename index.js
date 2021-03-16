@@ -13,7 +13,12 @@ const timer = async (ms) => {
   });
 };
 
-const getFinvizScreen = async (finvizScreenerUrl, __tickers = null) => {
+/**
+ * Get a list of tickers that pass a Finviz screen
+ * @param {string} finvizScreenerUrl - the url of the Finviz screener to search for
+ * @returns {string[]} array of tickers that pass the Finviz screen
+ */
+async function getFinvizScreen(finvizScreenerUrl, __tickers = null) {
   // typeguard
   try {
     /(\/\/finviz.com\/screener.ashx)/.exec(finvizScreenerUrl)[0];
@@ -46,7 +51,7 @@ const getFinvizScreen = async (finvizScreenerUrl, __tickers = null) => {
   } else {
     return __tickers;
   }
-};
+}
 
 module.exports = {
   getFinvizScreen,
