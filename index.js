@@ -1,5 +1,4 @@
 const fetch = require("node-fetch");
-const fs = require("fs");
 const cheerio = require("cheerio");
 
 const TICKERS_SELECTOR =
@@ -16,7 +15,7 @@ const timer = async (ms) => {
 /**
  * Get a list of tickers that pass a Finviz screen
  * @param {string} finvizScreenerUrl - the url of the Finviz screener to search for
- * @returns {string[]} array of tickers that pass the Finviz screen
+ * @returns {string[]|string} array of tickers that pass the Finviz screen, or an error message
  */
 async function getFinvizScreen(finvizScreenerUrl, __tickers = null) {
   // typeguard
